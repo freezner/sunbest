@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    src: url(../font/NanumSquareL.eot);
+    src: url(../font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(../font/NanumSquareL.woff) format('woff'),
+    url(../font/NanumSquareL.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url(../font/NanumSquareR.eot);
+    src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(../font/NanumSquareR.woff) format('woff'),
+    url(../font/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url(../font/NanumSquareB.eot);
+    src: url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(../font/NanumSquareB.woff) format('woff'),
+    url(../font/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    src: url(../font/NanumSquareEB.eot);
+    src: url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(../font/NanumSquareEB.woff) format('woff'),
+    url(../font/NanumSquareEB.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family: NanumSquare;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.layout_wrap {
+    width: 100%;
+}
+
+.layout_wrap .mobile_nav {
+    display: none;
+}
+
+/* layout_gnb */
+.layout_wrap .layout_gnb {
+    display: block;
+    width: 1440px;
+    height: 106px;
+    margin: 0 auto;
+}
+
+.layout_gnb .logo {
+    width: 20%;
+    float: left;
+    padding: 25px 0px;
+}
+
+.layout_gnb .menu {
+    position: relative;
+    width: 80%;
+    float: right;
+    padding: 40px 0px;
+    text-align:right;
+}
+
+.layout_gnb .menu a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.layout_gnb .menu a.all_menu {
+    position: absolute;
+    top: 35px;
+}
+
+/* layout_sub_top */
+.layout_wrap .layout_sub_top {
+    width: 100%;
+    height: 253px;
+}
+
+.sub_image01 { background:url("../img/subtop_01.jpg"); }
+.sub_image02 { background:url("../img/subtop_02.jpg"); }
+.sub_image03 { background:url("../img/subtop_03.jpg"); }
+.sub_image04 { background:url("../img/subtop_04.jpg"); }
+.sub_image05 { background:url("../img/subtop_05.jpg"); }
+.sub_image06 { background:url("../img/subtop_06.jpg"); }
+.sub_image07 { background:url("../img/subtop_07.jpg"); }
+
+.sub_image_title {
+    width: 1440px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.sub_image_title > h1 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.sub_image_title > p {
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* layout_sub_menu */
+.layout_wrap .layout_sub_menu {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.layout_wrap .layout_sub_menu > p {
+    margin: 16px auto;
+}
+
+.layout_wrap .layout_sub_menu .bar {
+    margin:0px 10px;
+}
+
+/* layout_bottom */
+.layout_wrap .layout_bottom {
+    width: 100%;
+}
+
+/* bottom contract */
+.layout_bottom .contract {
+    width: 1440px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+/* bottom support */
+.layout_bottom .support {
+    width: 100%;
+    height: 575px;
+    margin: 0 auto;
+    background-color: #303030;
+}
+
+.layout_bottom .support_content {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.support_content .company_info {
+    width: 50%;
+    float: left;
+    padding: 75px 0px;
+    color: #fff;
+}
+
+.support_content .company_info h1 {
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.support_content .company_info h2 {
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+
+
+.support_content .company_info li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.support_content .company_info .btn_send_email {
+    margin-top: 50px;
+    padding: 15px 50px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+.support_content .company_map {
+    width: 50%;
+    float: right;
+    text-align: left;
+    padding: 75px 0px;
+}
+
+/* bottom copy */
+.layout_bottom .copy {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.layout_bottom .copy .links {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 0px;
+}
+
+.layout_bottom .copy .info {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 3px 0px;
+}
+
+.layout_bottom .copy .copyright {
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px 0px 0px;
+}
+
+.layout_bottom .copy a {
+    color: #fff;
+}
+
+.layout_bottom .copy .bar {
+    margin: 0px 10px;
+    color: #fff;
+}
