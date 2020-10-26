@@ -77,14 +77,14 @@ button {
 .layout_gnb .logo {
     width: 20%;
     float: left;
-    padding: 25px 0px;
+    padding: 25px 0;
 }
 
 .layout_gnb .menu {
     position: relative;
     width: 80%;
     float: right;
-    padding: 40px 0px;
+    padding: 40px 0;
     text-align:right;
 }
 
@@ -118,7 +118,7 @@ button {
 
 .sub_image_title {
     width: 1440px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 50px;
 }
 
@@ -148,7 +148,7 @@ button {
 }
 
 .layout_wrap .layout_sub_menu .bar {
-    margin:0px 10px;
+    margin:0 10px;
 }
 
 /* layout_bottom */
@@ -179,7 +179,7 @@ button {
 .support_content .company_info {
     width: 50%;
     float: left;
-    padding: 75px 0px;
+    padding: 75px 0;
     color: #fff;
 }
 
@@ -211,14 +211,14 @@ button {
     width: 50%;
     float: right;
     text-align: left;
-    padding: 75px 0px;
+    padding: 75px 0;
 }
 
 /* bottom copy */
 .layout_bottom .copy {
     width: 100%;
     margin: 0 auto;
-    padding: 70px 0px;
+    padding: 70px 0;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -227,19 +227,19 @@ button {
 .layout_bottom .copy .links {
     font-weight: 700;
     font-size: 14px;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
 .layout_bottom .copy .info {
     font-weight: 400;
     font-size: 12px;
-    padding: 3px 0px;
+    padding: 3px 0;
 }
 
 .layout_bottom .copy .copyright {
     font-weight: 300;
     font-size: 12px;
-    padding: 10px 0px 0px;
+    padding: 10px 0 0;
 }
 
 .layout_bottom .copy a {
@@ -247,6 +247,6 @@ button {
 }
 
 .layout_bottom .copy .bar {
-    margin: 0px 10px;
+    margin: 0 10px;
     color: #fff;
 }

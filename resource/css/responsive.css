@@ -58,7 +58,7 @@
     }
 
     .sub_image_title > p {
-        padding: 0px 20px;
+        padding: 0 20px;
         word-break: keep-all;
         line-height: 20px;
     }
@@ -69,13 +69,13 @@
 
     .layout_wrap .layout_sub_menu a {
         width: 100%;
-        padding: 10px 0px;
+        padding: 10px 0;
         border-bottom: 1px solid #ddd;
         display: block;
     }
 
     .layout_wrap .layout_sub_menu a:last-child {
-        border-bottom: 0px;
+        border-bottom: 0;
     }
 
     .layout_wrap .layout_sub_menu .bar {
@@ -97,7 +97,7 @@
 
     .support_content .company_info {
         width: 100%;
-        padding: 20px 0px 40px;
+        padding: 20px 0 40px;
         text-align: center;
     }
 
@@ -130,6 +130,6 @@
 
     .layout_bottom .copy .copyright {
         margin: 0;
-        padding: 10px 0px 20px;
+        padding: 10px 0 20px;
     }
 }
