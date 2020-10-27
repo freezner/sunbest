@@ -53,6 +53,10 @@
         margin: 0 auto;
     }
 
+    .layout_sub_content .page_history {
+        display: none;
+    }
+
     .sub_image_title {
         width: 100vw;
     }
@@ -61,6 +65,32 @@
         padding: 0 20px;
         word-break: keep-all;
         line-height: 20px;
+    }
+
+    .layout_sub_content {
+        width: 100vw;
+    }
+
+    .layout_sub_content .page_title {
+        width: 100vw;
+    }
+
+    .layout_sub_content .page_title h1 {
+        font-size: 30px;
+    }
+
+    .layout_sub_content .page_title p {
+        font-size:15px;
+        padding: 0 10px;
+    }
+
+    .layout_sub_content .page_title .title_button_box .button {
+        width: 90vw;
+        margin-bottom: 2px;
+    }
+
+    .layout_bottom .contract_content {
+        width: 100vw;
     }
 
     .layout_wrap .layout_sub_menu > p {
@@ -82,8 +112,18 @@
         display: none;
     }
 
+    .layout_bottom .contract_content .button_box {
+        width: 100vw;
+    }
+
+    .layout_bottom .contract_content p {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
     .layout_bottom .contract {
         width: 100vw;
+        height: initial;
     }
 
     .layout_bottom .support {

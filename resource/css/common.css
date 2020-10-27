@@ -151,6 +151,60 @@ button {
     margin:0 10px;
 }
 
+.layout_sub_content {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.layout_sub_content .page_history {
+    width: 100%;
+    text-align:right;
+    font-size: 12px;
+    padding:10px 0;
+}
+
+.layout_sub_content .page_title {
+    width: 1440px;
+    text-align:center;
+}
+
+.layout_sub_content .page_title h1 {
+    font-size:40px;
+    font-weught: 700;
+}
+
+.layout_sub_content .page_title p {
+    font-size: 24px;
+    font-weught: 300;
+    word-break: keep-all;
+    line-height: 1.5em;
+}
+
+.layout_sub_content .page_title .title_button_box {
+    width: 100%;
+    padding-bottom: 85px;
+    margin-bottom: 75px;
+    border-bottom: 1px solid #ddd;
+}
+
+.layout_sub_content .page_title .title_button_box .button {
+    display:inline-block;
+    width: 192px;
+    height: 42px;
+    fonot-size: 14px;
+    background-color: #aaaaaa;
+    color: #fff;
+    line-height: 2.6em;
+}
+
+.layout_sub_content .page_title .title_button_box .button:hover {
+    background-color: #e86976;
+}
+
+.layout_sub_content .page_title .title_button_box .button.active {
+    background-color: #e86976;
+}
+
 /* layout_bottom */
 .layout_wrap .layout_bottom {
     width: 100%;
@@ -158,9 +212,46 @@ button {
 
 /* bottom contract */
 .layout_bottom .contract {
-    width: 1440px;
+    width: 100%;
     height: 450px;
+    background:url("../img/bottom_top.png")
+}
+
+.layout_bottom .contract_content {
+    width: 1440px;
+    height: 100%;
     margin: 0 auto;
+    text-align:center;
+}
+
+.layout_bottom .contract_content .bottom_logo {
+    margin: 60px auto 35px;
+}
+
+.layout_bottom .contract_content .button_box {
+    width:820px;
+    clear: both;
+    margin: 0 auto;
+}
+
+.layout_bottom .contract_content .button {
+    display:inline-block;
+    width:260px;
+    height:60px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align:center;
+    font-size:27px;
+    font-weight: 900;
+    line-height: 2.2em;
+    margin:5px;
+}
+
+.layout_bottom .contract_content p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
 }
 
 /* bottom support */
