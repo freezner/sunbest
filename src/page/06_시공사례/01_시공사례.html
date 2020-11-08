@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+{{$head_sub}}
+
+
+
+
+<body>
+<div class="layout_wrap">
+{{$topmenu}}
+
+
+
+
+<!--본문 시작-->
+
+
+
+
+
+<!-- Top visual -->
+<div class="layout_sub_top sub_image06" uk-parallax="bgy: 200">
+<div class="sub_image_title">
+<h1 uk-parallax="opacity: 1,0; y: 0,-100; scale: 1,2; viewport: 0.5;">C o m m u n i t y</h1>
+<p uk-parallax="opacity: 1,0; y: 0,100; scale: 1,0.5; viewport: 0.5;">공간의 가치를 창출하는 썬베스트는 가장 합리적인 비용으로 우수한 퀄리티를 실현해드리는<br/>공장직영 업체로써 믿고 맡겨주시면 결과로 보답해드리고 있습니다.</p>
+</div>
+</div>
+
+
+
+
+
+<!-- Top sub menu -->
+<div class="layout_sub_menu">
+{{$com_board_category_code}}
+<p>
+<a href="/bizdemo94552/home/interior/page0201.php">인테리어</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/sky/page0301.php">스카이</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/sky/page0302.php">파고라</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/folding/page0501.php">폴딩도어</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/earning/page0401.php">박스어닝</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/earning/page0402.php">접이식</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/earning/page0403.php">고정식</a>
+<span class="bar">|</span>
+<a href="/bizdemo94552/home/earning/page0404.php">기타</a>
+</p>
+</div>
+
+
+
+
+<!-- Content -->
+<div class="layout_sub_content">
+<div class="page_history">
+홈 > 시공사례
+</div>
+
+
+
+
+<div class="page_title">
+<h1>시공사례</h1>
+<p>시공사례입니다. 언제나 친절히 상담해드리고 있으니 궁금한 점은 편히 문의하세요.</p>
+<div class="title_button_box">
+<a href="#" class="button">카톡상담</a>
+<a href="#" class="button">온라인 1:1문의</a>
+<a href="#" class="button">010-0000-0000</a>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="content_body">
+<div class="custom_category">
+<span class="cate_item">전체</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c1">인테리어</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c2">스카이어닝</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c3">파고라</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c4">폴딩도어</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c5">박스어닝</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c6">접이식어닝</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c7">고정어닝</span>
+<span class="bar">|</span>
+<span class="cate_item" data-item="c8">기타어닝</span>
+</div>
+
+
+{{$cafe_board_8}}
+</div>
+
+
+
+
+
+<!--본문 끝-->
+
+
+
+
+{{$footer}}
+</div>
+
+
+<script>
+$(document).ready(function(){
+$(".custom_category .cate_item").on("click", function(){
+$("#category_sel select").val($(this).attr("data-item"));
+$("#category_sel select").trigger("change");
+});
+});
+</script>
+
+
+</body>
+</html>

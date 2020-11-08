@@ -1,0 +1,54 @@
+<head>
+  <title>썬베스트</title>
+  
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.2">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="{{$template}}/inc/uikit.css" />
+  <link rel="stylesheet" href="{{$template}}/inc/common.css" />
+  <link rel="stylesheet" href="{{$template}}/inc/responsive.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+  <script src="{{$template}}/inc/common.js"></script>
+  <script src="{{$template}}/inc/flip.js"></script>
+  <script src="{{$template}}/inc/uikit.js"></script>
+  <script src="{{$template}}/inc/uikiticon.js"></script>
+  
+  <script type="text/javascript">
+  function menuB(id,cont,total,num) {
+  var id = id;
+  var cont = cont;
+  var total = total;
+  var menu = new Array();
+  var content = new Array();
+  for(j=0; j <= eval(total); j++) {
+  menu[j] = document.getElementById(id + eval(j+1));
+  content[j] = document.getElementById(cont + eval(j+1));
+  }
+  for(var i=0 ; i<= eval(total); i++) {
+  if (i == num) {
+  menu[i].src = menu[i].src.replace('_off','_on');
+  content[i].style.display = '';
+  }
+  else {
+  menu[i].src = menu[i].src.replace('_on','_off');
+  content[i].style.display = 'none';
+  }
+  }
+  }
+  
+  $(document).ready(function(){
+  flipCard('#flip1');
+  flipCard('#flip2');
+  flipCard('#flip3');
+  flipCard('#flip4');
+  });
+  
+  function flipCard(id) {
+  $(id).flip({
+  trigger: 'hover',
+  axis: 'y'
+  });
+  }
+  </script>
+  </head>

@@ -1,0 +1,813 @@
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareL.eot);
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareL.woff) format('woff'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareL.ttf) format('truetype');
+  }
+  
+  
+  @font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareR.eot);
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareR.woff) format('woff'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareR.ttf) format('truetype');
+  }
+  
+  
+  @font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareB.eot);
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareB.woff) format('woff'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareB.ttf) format('truetype');
+  }
+  
+  
+  @font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareEB.eot);
+  src: url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareEB.woff) format('woff'),
+  url(http://bdmp-005.cafe24.com/bizdemo94552/img/font/NanumSquareEB.ttf) format('truetype');
+  }
+  
+  
+  body {
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  body * {
+  font-family: NanumSquare;
+  }
+  
+  a {
+  color: #000;
+  text-decoration: none !important;
+  }
+  
+  ul {
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  li {
+  list-style: none;
+  }
+  
+  
+  button {
+  cursor: pointer;
+  }
+  
+  img {
+  border:0;
+  }
+  
+  .layout_wrap {
+  width: 100%;
+  }
+  
+  
+  .layout_wrap .mobile_nav {
+  display: none;
+  }
+  
+  
+  /* layout_gnb */
+  .layout_wrap .layout_gnb {
+  display: block;
+  width: 100%;
+  height: 106px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  border-bottom: 2px solid #ddd;
+  background-color: #fff;
+  }
+  
+  
+  .layout_wrap .layout_gnb_content {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto 2px;
+  }
+  
+  
+  .layout_gnb .logo {
+  width: 20%;
+  float: left;
+  padding: 25px 0;
+  text-align: left;
+  }
+  
+  
+  .layout_gnb .menu {
+  position: relative;
+  width: 80%;
+  float: right;
+  padding: 40px 0;
+  text-align:right;
+  }
+
+  .layout_gnb .menu .all_menu {
+    cursor: pointer;
+    margin-left:20px;
+  }
+  
+  
+  .layout_gnb .menu a {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  margin-left: 50px;
+  display: inline-block;
+  }
+  
+  
+  /* submenu */
+  .layout_wrap .layout_gnb_sub_content {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  left: 140px;
+  }
+  
+  
+  .layout_gnb .submenu {
+  width: 100%;
+  height: 295px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  
+  .layout_gnb .submenu_images {
+  float: left;
+  margin-left: 85px;
+  padding: 30px 0;
+  }
+  
+  
+  .layout_gnb .submenu_images img {
+  margin-right: 15px;
+  width: 950px;
+  }
+  
+  
+  .layout_gnb .submenu_images img:last-child {
+  margin-right: 0;
+  }
+  
+  
+  .layout_gnb .submenu_content {
+  width: 150px;
+  padding: 0;
+  padding: 30px 0;
+  float: left;
+  }
+  
+  
+  .layout_gnb .submenu_content dt {
+  font-weight: 700;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  }
+  
+  
+  .layout_gnb .submenu_content li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  
+  .layout_wrap .layout_main_top {
+  width: 100%;
+  height: 840px;
+  margin-top: 106px;
+  }
+  
+  .layout_wrap .layout_main_top .swiper-slide {
+  background-size: cover !important;
+  }
+  
+  .main_image_title h1 {
+  font-size: 47px;
+  text-align: center;
+  color: #fff;
+  }
+  
+  
+  .main_image_title p {
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  }
+  
+  
+  /* layout_sub_top */
+  .layout_wrap .layout_sub_top {
+  width: 100%;
+  height: 253px;
+  margin-top: 106px;
+  }
+  
+  
+  .sub_image01 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_01.jpg"); }
+  .sub_image02 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_02.jpg"); }
+  .sub_image03 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_03.jpg"); }
+  .sub_image04 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_04.jpg"); }
+  .sub_image05 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_05.jpg"); }
+  .sub_image06 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_06.jpg"); }
+  .sub_image07 { background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/subtop_07.jpg"); }
+  
+  
+  .sub_image_title {
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 70px;
+  }
+  
+  
+  .sub_image_title > h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  }
+  
+  
+  .sub_image_title > p {
+  font-size: 14px;
+  color:#fff;
+  text-align: center;
+  line-height: 20px;
+  }
+  
+  
+  /* layout_sub_menu */
+  .layout_wrap .layout_sub_menu {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  }
+  
+  
+  .layout_wrap .layout_sub_menu > p {
+  padding: 16px 0; 
+  background-color: #393939; 
+  margin: 0; 
+  color: #cecdcd;
+  }
+  
+  
+  
+  .layout_sub_menu a, .layout_sub_menu a:visited {
+  color: #cecdcd !important;
+  }
+  
+  .layout_sub_menu a:hover {
+  color:#fbff9b !important;
+  }
+  
+  .layout_wrap .layout_sub_menu .bar {
+  margin:0 10px;
+  }
+  
+  
+  .layout_sub_content {
+  width: 1440px;
+  margin: 0 auto 100px;
+  }
+  
+  
+  .layout_sub_content .page_history {
+  width: 100%;
+  text-align:right;
+  font-size: 12px;
+  padding:10px 0;
+  }
+  
+  
+  .layout_sub_content .page_title {
+  width: 1440px;
+  text-align:center;
+  }
+  
+  
+  .layout_sub_content .page_title h1 {
+  font-size:48pt;
+  font-weight: bold;
+  }
+  
+  
+  .layout_sub_content .page_title p {
+  font-size: 24pt;
+  font-weight: bold;
+  word-break: keep-all;
+  line-height: 1.5em;
+  }
+  
+  
+  .layout_sub_content .page_title .title_button_box {
+  width: 100%;
+  }
+  
+  
+  .layout_sub_content .page_title .title_button_box .button {
+  display:inline-block;
+  width: 192px;
+  height: 42px;
+  font-size: 14px;
+  background-color: #aaaaaa;
+  color: #fff;
+  line-height: 3em;
+  }
+  
+  
+  .layout_sub_content .page_title .title_button_box .button:hover {
+  background-color: #e86976;
+  }
+  
+  
+  .layout_sub_content .page_title .title_button_box .button.active {
+  background-color: #e86976;
+  }
+  
+  
+  .content_body {
+  width: 1440px;
+  margin: 0 auto;
+  text-align:center;
+  }
+  
+  
+  .content_body img {
+  width: 100%;
+  }
+  
+  .content_body h1 {
+  font-size: 60pt !important;
+  font-weight: bold;
+  }
+  
+  .content_body p {
+  font-size: 24pt !important;
+  line-height: 1.6em;
+  word-break: keep-all;
+  }
+  
+  
+  /* layout_bottom */
+  .layout_wrap .layout_bottom {
+  width: 100%;
+  }
+  
+  
+  /* bottom contract */
+  .layout_bottom .contract {
+  width: 100%;
+  height: 450px;
+  background:url("http://bdmp-005.cafe24.com/bizdemo94552/img/home/bottom_top.png")
+  }
+  
+  
+  .layout_bottom .contract_content {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  text-align:center;
+  }
+  
+  
+  .layout_bottom .contract_content .bottom_logo {
+  margin: 60px auto 35px;
+  }
+  
+  
+  .layout_bottom .contract_content .button_box {
+  width:820px;
+  clear: both;
+  margin: 0 auto;
+  }
+  
+  
+  .layout_bottom .contract_content .button {
+  display:inline-block;
+  width:260px;
+  height:60px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align:center;
+  font-size:27px;
+  font-weight: 900;
+  line-height: 2.2em;
+  margin:5px;
+  }
+  
+  
+  .layout_bottom .contract_content p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  }
+  
+  
+  /* bottom support */
+  .layout_bottom .support {
+  width: 100%;
+  height: 575px;
+  margin: 0 auto;
+  background-color: #303030;
+  }
+  
+  
+  .layout_bottom .support_content {
+  width: 1000px;
+  margin: 0 auto;
+  }
+  
+  
+  .support_content .company_info {
+  width: 50%;
+  float: left;
+  padding: 75px 0;
+  color: #fff;
+  }
+  
+  
+  .support_content .company_info h1 {
+  color: #fff;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin: 0;
+  }
+  
+  
+  .support_content .company_info h2 {
+  color: #fff;
+  font-size: 17px;
+  padding-bottom: 25px;
+  margin: 0;
+  }
+  
+  .support_content .company_info ul {
+  margin: 0;
+  padding: 0;
+  } 
+  
+  .support_content .company_info li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  }
+  
+  
+  .support_content .company_info .btn_send_email {
+  margin-top: 50px;
+  padding: 15px 50px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  display: inline-block;
+  }
+  
+  
+  .support_content .company_map {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding: 75px 0;
+  }
+  
+  
+  /* bottom copy */
+  .layout_bottom .copy {
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  }
+  
+  
+  .layout_bottom .copy .links {
+  font-weight: 700;
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 15px 0;
+  }
+  
+  
+  .layout_bottom .copy .info {
+  font-weight: 400;
+  font-size: 12pt;
+  padding: 3px 0;
+  }
+  
+  
+  .layout_bottom .copy .copyright {
+  font-weight: 300;
+  font-size: 11pt;
+  padding: 10px 0 0;
+  }
+  
+  
+  .layout_bottom .copy a {
+  color: #fff;
+  }
+  
+  
+  .layout_bottom .copy .bar {
+  margin: 0 10px;
+  color: #fff;
+  }
+  
+  
+  .best_content {
+  display: block;
+  }
+  
+  
+  .m_best_content {
+  display: none;
+  }
+  
+  
+  .best_content h1, .m_best_content h1 {
+  margin-top: 110px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 35px;
+  }
+  
+  
+  .best_content p, .m_best_content p {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-size: 20px;
+  }
+  
+  
+  .best_content .card_list {
+  width: 100%;
+  height: 658px;
+  padding: 0;
+  margin: 0;
+  }
+  
+  
+  .best_content .card_list li {
+  width:23%;
+  float:left;
+  margin: 0 1%;
+  text-align: center;
+  }
+  
+  
+  .layout_main_product {
+  width: 100%;
+  height: 620px;
+  display: block;
+  margin: 140px 0px;
+  position: relative;
+  }
+
+  .layout_main_product h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .layout_main_product .product_navi {
+    width: 1200px;
+    margin: 0 auto;
+    position:absolute;
+    top:0px;
+    left:12%;
+  }
+
+  .layout_main_product .navi_list {
+    width: 35%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .layout_main_product .navi_list span {
+    margin: 10px 10px 0px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .layout_main_product .navi_list span:hover {
+    color: #0072ff;
+  }
+
+  .layout_main_product .navi_list span.active {
+    color: #0072ff;
+    text-decoration: underline;
+  }
+  
+  /* main swiper */
+  .swiper-container {
+  width: 100%;
+  height: 100%;
+  }
+  
+  
+  .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  
+  
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  }
+  
+  
+  .quick {
+  position: fixed;
+  right: 10px;
+  top: 120px;
+  z-index: 998;
+  display:none;
+  }
+  
+  
+  .mobile_menu .uk-offcanvas-slide {
+  background-color:#fff;
+  border-left:1px solid #393939;
+  }
+  
+  
+  .mobile_menu .uk-offcanvas-close {
+  color: #000 !important;
+  }
+  
+  
+  .mobile_menu ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  }
+  
+  
+  .mobile_menu h1 {
+  width:100%;
+  font-size: 20px;
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 0;
+  color:#303030 !important;
+  }
+  
+  
+  .mobile_menu p {
+  margin-top: 0;
+  }
+  
+  
+  .mobile_menu a {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  color:#303030 !important;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  
+  .mobile_menu p a:last-child {
+  border-bottom: 0px;
+  }
+  
+  
+  .mobile_menu h1 > a {
+  font-size: 20px;
+  border-bottom: 0px;
+  }
+  
+  
+  .board_ouput {
+  margin-top:50px;
+  padding-bottom: 100px;
+  }
+  
+  
+  .board_ouput .board_output_gallery_subject {
+  float: left;
+  padding: 10px 0px 20px;
+  font-size: 15px;
+  }
+  
+  
+  .board {
+  padding-bottom:50px;
+  }
+  
+  
+  .board img, table img {
+  width: initial !important;
+  }
+  
+  
+  .thumbImglist_small {
+  display:none;
+  }
+  
+  .contact_form {
+  width: 1000px;
+  margin: 0 auto 50px;
+  }
+  
+  
+  .contact_form tr td:last-child {
+  text-align: left;
+  }
+  
+  
+  .contact_form input {
+  padding: 5px 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  }
+  
+  
+  .contact_form textarea {
+  width: 95% !important;
+  margin: 10px;
+  border: 1px solid #ddd;
+  resize: none;
+  }
+  
+  
+  .customer {
+  width: 1000px;
+  margin: 0 auto 150px;
+  }
+  
+  
+  .customer > a {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  }
+  
+  
+  .customer img {
+  width: 295px;
+  }
+
+  .formmail_title_bgcolor {
+    min-width: 80px;
+  }
+
+  .uk-accordion-content {
+     margin-top: 0;
+  }
+
+  .m_submenu > li {
+    margin-top: 10px !important;
+  }
+
+  .m_submenu .uk-accordion-title::before {
+    content: "+"
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #fff;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+

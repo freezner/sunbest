@@ -1,0 +1,293 @@
+@media screen and (max-width: 1500px) {
+  * {
+  -webkit-transition:width 0.5s, height 0.5s, background-color 0.5s, -webkit-transform 0.5s; 
+  transition:width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
+  }
+  
+  
+  .layout_wrap {
+  width: 100vw;
+  overflow: hidden;
+  }
+  
+  
+  .layout_wrap .layout_gnb {
+  display: none;
+  }
+  
+  
+  .layout_wrap .mobile_nav {
+  display: block;
+  width: 100vw;
+  height:50px;
+  background-color: #fff;
+  position: fixed;
+  top:0px;
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .layout_wrap .layout_main_top {
+  height: 350px;
+  margin-top: 50px;
+  }
+  
+  .layout_wrap .mobile_nav .nav_left {
+  width: 20%;
+  height: 100%;
+  float: left;
+  }
+  
+  
+  .layout_wrap .mobile_nav .nav_right {
+  width: 20%;
+  float: right;
+  height: 100%;
+  text-align: right;
+  }
+  
+  
+  .layout_wrap .mobile_nav .nav_right a {
+  padding: 8px;
+  display: block;
+  }
+  
+  
+  .layout_wrap .mobile_nav .nav_center {
+  width: 60%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  }
+  
+  
+  .layout_wrap .mobile_nav .nav_center a {
+  display: block;
+  text-align: center;
+  }
+  
+  
+  .layout_wrap .mobile_nav .nav_center img {
+  height: 40px;
+  display: block;
+  padding-top: 3px;
+  margin: 0 auto;
+  }
+  
+  
+  .layout_wrap .layout_sub_top {
+  margin-top: 50px;
+  }
+  
+  
+  .layout_sub_content .page_history {
+  display: none;
+  }
+  
+  
+  .sub_image_title {
+  width: 100vw;
+  }
+  
+  
+  .sub_image_title > p {
+  padding: 0 20px;
+  word-break: keep-all;
+  line-height: 20px;
+  }
+  
+  
+  .layout_sub_content {
+  width: 100vw;
+  }
+  
+  
+  .layout_sub_content .page_title {
+  width: 100vw;
+  }
+  
+  
+  .layout_sub_content .page_title h1 {
+  font-size: 30px;
+  }
+  
+  
+  .layout_sub_content .page_title p {
+  font-size:15px;
+  padding: 0 10px;
+  }
+  
+  
+  .layout_sub_content .page_title .title_button_box .button {
+  width: 90vw;
+  margin-bottom: 2px;
+  }
+  
+  
+  .content_body {
+  width: 100vw;
+  } 
+  
+  
+  .layout_bottom .contract_content {
+  width: 100vw;
+  }
+  
+  
+  .layout_bottom .contract_content {
+  width: 100vw;
+  }
+  
+  
+  .layout_wrap .layout_sub_menu > p {
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  .layout_wrap .layout_sub_menu a {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  }
+  
+  
+  .layout_wrap .layout_sub_menu a:last-child {
+  border-bottom: 0;
+  }
+  
+  
+  .layout_wrap .layout_sub_menu .bar {
+  display: none;
+  }
+  
+  
+  .layout_bottom .contract_content .button_box {
+  width: 100vw;
+  }
+  
+  
+  .layout_bottom .contract_content p {
+  margin: 0;
+  padding: 20px 10px;
+  }
+  
+  
+  .layout_bottom .contract {
+  width: 100vw;
+  height: initial;
+  }
+  
+  
+  .layout_bottom .support {
+  height: initial;
+  }
+  
+  
+  .layout_bottom .support_content {
+  width: 100vw;
+  overflow: hidden;
+  }
+  
+  
+  .support_content .company_info {
+  width: 100%;
+  padding: 20px 0 40px;
+  text-align: center;
+  }
+  
+  
+  .support_content .company_map {
+  width: 100%;
+  padding: 0;
+  }
+  
+  
+  .support_content .company_map img {
+  width: 100%;
+  }
+  
+  
+  .layout_bottom .copy {
+  padding: 0;
+  }
+  
+  
+  .layout_bottom .copy .links {
+  margin: 0;
+  padding: 10px 20px;
+  word-break: keep-all;
+  line-height: 30px;
+  }
+  
+  
+  .layout_bottom .copy .info {
+  margin: 0;
+  padding: 10px 20px;
+  word-break: keep-all;
+  line-height: 30px;
+  }
+  
+  
+  .layout_bottom .copy .copyright {
+  margin: 0;
+  padding: 10px 0 20px;
+  }
+  
+  
+  .main_image_title h1 {
+  font-size: 23px;
+  line-height: 1.5em;
+  }
+  
+  
+  .best_content {
+  display: none;
+  }
+  
+  .m_best_content {
+  display: block;
+  }
+  
+  
+  .layout_main_product {
+  display: none;
+  }
+  
+  
+  .quick {
+  display: none;
+  }
+
+  .contact_form {
+    width:100vw;
+  }
+  
+  .contact_form .formmail_title_bgcolor {
+    min-width: 100px;
+  }
+
+  .contact_form .formmail_border, .contact_form .formmail_textarea_style {
+    max-width: 60vw;
+  }
+
+  .content_body h1 {
+    margin-top: 50px;
+    font-size: 30px !important;
+  }
+
+  .content_body p {
+    font-size: 20px !important;
+  }
+
+  .customer {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .board_ouput {
+    padding-bottom: 0;
+  }
+  
+  }

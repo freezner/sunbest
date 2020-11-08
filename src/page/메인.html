@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+{{$head}}
+<body>
+<div class="layout_wrap">
+{{$topmenu}}
+
+
+
+
+
+<!-- Top visual -->
+<div class="layout_main_top swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide" style="background:url('{{$template}}/img/main/main_visual1.jpg');">
+<div class="main_image_title">
+<img src="{{$template}}/img/main/main_visual_text1.png" alt="" />
+</div>
+</div>
+<div class="swiper-slide" style="background:url('{{$template}}/img/main/main_visual2.jpg');">
+<div class="main_image_title">
+<img src="{{$template}}/img/main/main_visual_text2.png" alt="" />
+</div>
+</div>
+<div class="swiper-slide" style="background:url('{{$template}}/img/main/main_visual3.jpg');">
+<div class="main_image_title">
+<img src="{{$template}}/img/main/main_visual_text3.png" alt="" />
+</div>
+</div>
+<div class="swiper-slide" style="background:url('{{$template}}/img/main/main_visual4.jpg');">
+<div class="main_image_title">
+<img src="{{$template}}/img/main/main_visual_text4.png" alt="" />
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+
+
+
+
+<div class="swiper-pagination"></div>
+</div>
+
+
+
+
+
+<!--본문 시작-->
+
+
+
+
+
+
+<div class="content_body">
+<div class="best_content">
+<h1>BEST Contents</h1>
+<p>썬베스트의 실제 시공사례를 소개합니다. 언제나 친절히 상담해드리고 있으니<br/>궁금한 점은 편히 문의하세요. (02-521-1170, 평일 09:00 ~ 18:00)</p>
+
+
+
+
+
+<ul class="card_list">
+<li id="flip1">
+<div class="front"><img src="{{$template}}/img/main/best1.jpg" alt="" /></div>
+<div class="back"><a href="#"><img src="{{$template}}/img/main/best1_over.jpg" alt="" /></a></div>
+</li>
+<li id="flip2">
+<div class="front"><img src="{{$template}}/img/main/best2.jpg" alt="" /></div>
+<div class="back"><a href="#"><img src="{{$template}}/img/main/best2_over.jpg" alt="" /></a></div>
+</li>
+<li id="flip3">
+<div class="front"><img src="{{$template}}/img/main/best3.jpg" alt="" /></div>
+<div class="back"><a href="#"><img src="{{$template}}/img/main/best3_over.jpg" alt="" /></a></div>
+</li>
+<li id="flip4">
+<div class="front"><img src="{{$template}}/img/main/best4.jpg" alt="" /></div>
+<div class="back"><a href="#"><img src="{{$template}}/img/main/best4_over.jpg" alt="" /></a></div>
+</li>
+</ul>
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="layout_main_product">
+  <a href="/bizdemo94552/home/sky/page0301.php" class="productBg"><img src="{{$template}}/img/main/product1.jpg" alt=""/></a>
+  <div class="product_navi">
+    <h1>'PRODUCT TYPE'</h1>
+    <div class="navi_list">
+      <span id="product1" class="active">스카이어닝</span>
+      <span id="product2">파고라시스템</span>
+      <span id="product3">박스어닝</span>
+      <br/>
+      <span id="product4">접이식어닝</span>
+      <span id="product5">폴딩도어</span>
+      <span id="product6">고정어닝</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- div class="content_body">
+<img src="{{$template}}/img/home/res/main_content.jpg" alt="" />
+</div -->
+
+
+
+<div class="content_body">
+<h1>CUSTOMER CENTER</h1>
+<p>02-521-1170 l 오전 9시~오후 6시 (토요일, 공휴일 휴무)<br/>email : sh-inc2013@naver.com</p>
+
+
+<div class="customer">
+<a class="button_area" href="/bizdemo94552/home/contract/page0701.php"><img src="{{$template}}/img/button/customer1.png" data-customer-id="1" alt="" /></a>
+<a class="button_area" href="#"><img src="{{$template}}/img/button/customer2.png" data-customer-id="2" alt="" /></a>
+<a class="button_area" href="#"><img src="{{$template}}/img/button/customer3.png" data-customer-id="3" alt="" /></a>
+</div>
+
+
+</div>
+
+
+<div class="content_body">
+{{$cafe_board_output_6}}
+</div>
+
+
+
+<div class="content_body">
+<h1>온라인 문의</h1>
+<p>02-521-1170 l 오전 9시~오후 6시 (토요일, 공휴일 휴무)<br/>email : sh-inc2013@naver.com</p>
+<div class="contact_form">
+{{$cafe_formmail_3}}
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--본문 끝-->
+
+
+
+
+
+{{$footer}}
+
+
+
+
+<script>
+$(document).ready(function(){
+var templatePath = "{{$template}}";
+
+
+$(".customer > a").on("mouseover", function(){
+$(this).find("img").attr("src", templatePath + "/img/button/customer" + $(this).find("img").attr("data-customer-id") + "_over.png");
+});
+
+
+$(".customer > a").on("mouseout", function(){
+$(this).find("img").attr("src", templatePath + "/img/button/customer" + $(this).find("img").attr("data-customer-id") + ".png");
+});
+
+$(".navi_list span").on("click", function(){
+  $(".navi_list span").removeClass("active");
+
+  $(this).addClass("active");
+
+  var productBgPath = "{{$template}}/img/main/" + $(this).attr("id") + ".jpg";
+  var productUrl = "";
+
+  switch($(this).attr("id")) {
+    case 'product1' : productUrl = "/bizdemo94552/home/sky/page0301.php"; break;
+    case 'product2' : productUrl = "/bizdemo94552/home/sky/page0302.php"; break;
+    case 'product3' : productUrl = "/bizdemo94552/home/earning/page0401.php"; break;
+    case 'product4' : productUrl = "/bizdemo94552/home/earning/page0402.php"; break;
+    case 'product5' : productUrl = "/bizdemo94552/home/folding/page0501.php"; break;
+    case 'product6' : productUrl = "/bizdemo94552/home/earning/page0403.php"; break;
+  }
+
+  $(".productBg > img").attr("src", productBgPath);
+  $(".productBg").attr("href", productUrl);
+});
+});
+
+
+var swiper = new Swiper('.swiper-container', {
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+autoplay: {
+delay: 10000,
+disableOnInteraction: false,
+},
+});
+</script>
+
+
+
+
+
+</body>
+</html>
